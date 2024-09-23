@@ -5,10 +5,10 @@
             <a href="#"><i class="fa-solid fa-house"></i> Home</a>
         </li>
         <li class="mb-3">
-            <a href="#"><i class="fa-solid fa-list-ul"></i> Elenco progetti</a>
+            <a href="{{ route('admin.projects.index') }}"><i class="fa-solid fa-list-ul"></i> Elenco progetti</a>
         </li>
         <li class="mb-3">
-            <a href="#"><i class="fa-solid fa-square-plus"></i></i> Nuovo progetto</a>
+            <a href="{{ route('admin.projects.create') }}"><i class="fa-solid fa-square-plus"></i></i> Nuovo progetto</a>
         </li>
     </ul>
 
