@@ -19,8 +19,8 @@
       <tr>
         <th scope="row">{{ $project->title }}</td>
         <td scope="row">{{ $project->category }}</td>
-        <td scope="row">{{ $project->start_date }}</td>
-        <td scope="row">{{ is_null($project->end_date) ? 'IN CORSO' : $project->end_date }}</td>
+        <td scope="row">{{ \Carbon\Carbon::parse($project->start_date)->format('d/m/Y') }}</td>
+        <td scope="row">{{ $project->end_date ? 'IN CORSO' : \Carbon\Carbon::parse($project->end_date)->format('d/m/Y') }}</td>
         <td scope="row">{{ $project->project_url }}</td>
         <td scope="row">
           <a href="{{ route('admin.projects.show', $project) }}" class="btn btn-success">

@@ -2,7 +2,7 @@
     
     <ul>
         <li class="mb-3">
-            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="{{ route('admin.home') }}"><i class="fa-solid fa-house"></i> Home</a>
         </li>
         <li class="mb-3">
             <a href="{{ route('admin.projects.index') }}"><i class="fa-solid fa-list-ul"></i> Elenco progetti</a>
